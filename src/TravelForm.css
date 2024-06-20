@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+.travel-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightblue;
+  overflow: hidden; /* Ensures the image stays within bounds */
+}
+
+.left-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire div */
+}
+
+.right-content {
+  flex: 1;
+  background-color: white;
+}
+
+
+.right-content-layout {
+  margin-left: 170px;
+  margin-right: 170px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.continue-with-google {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  height: auto;
+  width: 100%;
+
+  border: 3px solid black;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.continue-with-google p {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif; /* Apply the font here */
+}
+
+.right-content-layout h4 {
+  font-family: 'Popins' sans-serif;
+  color: lightgrey;
+  margin-bottom: 30px;
+}
+
+.first-2-inputs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between; /* Add space between inputs */
+}
+
+.input-container {
+  width: 48%; /* Make inputs take up 48% of the width */
+  position: relative; /* Ensure proper positioning for children */
+}
+
+.input-container input {
+  width: 100%; /* Make inputs take up the full width of their container */
+  padding: 16px 8px;
+  font-size: 16px;
+  border: 1px solid #D9D9D9;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+}
+
+.input-container input::placeholder {
+  color: #D9D9D9; /* Color for placeholders */
+}
+
+.emailRow {
+  width: 100%;
+}
+
+.emailRow label {
+  display: block;
+  margin-bottom: 5px;
+  
+}
+
+.emailRow input {
+  width: calc(100% - 16px); /* Make input take up full width minus padding */
+  padding: 16PX 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%;
+}
+
+.emailRow input::placeholder {
+  color: #D9D9D9; /* Color for placeholders */
+}
+
+
+
+.passwordRow {
+  width: 100%;
+}
+
+.passwordRow label {
+  display: block;
+  margin-bottom: 5px;
+    margin-bottom: 0;
+
+}
+
+.passwordRow input {
+  width: calc(100% - 16px); /* Make input take up full width minus padding */
+  padding: 16PX 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+  width: 100%;
+  
+}
+
+.passwordRow input::placeholder {
+  color: #D9D9D9; /* Color for placeholders */
+}
+
+.passwordParametters {
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  color: #D9D9D9;
+}
+
+
+.input-container1 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.last-four {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Style for the label */
+.input-container1 label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+/* Style for the select dropdown */
+.phoneNumberSelect {
+  padding: 16PX 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; /* Include padding and border in width */
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  width: 100%;
+
+}
+
+.phoneNumberSelect:focus {
+  border-color: #007BFF;
+}
+
+/* Remove arrow on the select */
+.phoneNumberSelect {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path fill="none" stroke="%23999" d="M0 0l5 5 5-5"/></svg>') no-repeat right 10px center;
+  background-color: #fff;
+  background-size: 10px;
+}
+
+/* Add padding to account for the custom arrow */
+.phoneNumberSelect {
+  padding-right: 30px;
+}
+
+.nationality {
+  margin-bottom: 20px;
+}
+
+/* Custom dropdown arrow */
+.phoneNumberSelect::after {
+  content: '▼'; /* Custom arrow */
+  position: absolute;
+  right: 50px; /* Adjust position as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Make sure the arrow is not clickable */
+  font-size: 12px;
+  color: #333;
+}

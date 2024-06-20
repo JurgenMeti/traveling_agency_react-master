@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.continentst {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 360px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: default;
+}
+
+/* Styles for continents container */
+
+
+
+
+.continensts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+}
+
+.tour-packages {
+    margin-left: 200px;
+    font-family: 'Popins' sans-serif;
+    font-family: 1000;
+    color: #3e0ebb;
+}
+
+.tour-packages h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 1000;
+    cursor: default;
+}
+
+/* Styles for filter container */
+.filter_container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: 0 200px 50px;
+    /* Top, Right, Bottom */
+    cursor: pointer;
+}
+
+/* Styles for filter box */
+.filter_box {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #6e677e;
+    padding-left: 20px;
+    gap: 20px;
+    padding-right: 20px;
+    border-radius: 6px;
+    transition: border-color 0.3s ease, border-radius 0.3s ease;
+    position: relative;
+}
+
+.filter_box:hover {
+    border: 2px solid #310b9d;
+}
+
+.dropdown-content {
+    position: absolute;
+    width: 100%;
+    /* Full width of filter_box */
+    background-color: white;
+    z-index: 1;
+    margin-top: 330px;
+    /* Adjust as needed for visual alignment */
+    border-radius: 6px;
+    background-color: #3e0ebb;
+    overflow: hidden;
+    /* Ensures children do not overflow the rounded corners */
+}
+
+.dropdown-content option {
+    display: block;
+    /* Ensures option behaves like a block-level element and fills the container */
+    width: 100%;
+    /* Full width */
+    padding: 10px 20px;
+    /* Comfortable padding for clicking */
+    color: white;
+    background-color: #3e0ebb;
+    border: none;
+    /* Removes any default styling */
+    text-align: left;
+    /* Align text to the left */
+    cursor: pointer;
+    /* Indicates clickable items */
+}
+
+.dropdown-content option:first-child {
+    border-top-left-radius: 6px;
+    /* Rounded top-left corner */
+    border-top-right-radius: 6px;
+    /* Rounded top-right corner */
+}
+
+.dropdown-content option:last-child {
+    border-bottom-left-radius: 6px;
+    /* Rounded bottom-left corner */
+    border-bottom-right-radius: 6px;
+    /* Rounded bottom-right corner */
+}
+
+.dropdown-content option:hover {
+    background-color: black;
+    color: white;
+}
+
+.filter_box:hover {
+    border: 2px solid #3e0ebb;
+    border-radius: 6px;
+}
+
+.filter_box h2 {
+    font-size: 24px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 300;
+    /* Light */
+}
+
+/* Styles for headings */
+h1,
+.filter_box h2 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 500;
+    /* Medium */
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Styles for card container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 33px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+/* Styles for each tour card */
+.card {
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    background: linear-gradient(to top, #5314ef, #5314ef);
+    /* Gradient from dark to light color */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+}
+
+.card-title {
+    font-size: 1.2rem;
+    margin-bottom: 5px; /* Adjust the margin as needed to reduce space */
+    max-width: 100%; /* Ensures the title does not exceed the width of its container */
+    overflow: hidden; /* Hides text that goes beyond the width of the container */
+    text-overflow: ellipsis; /* Adds '...' at the end of the text when it overflows */
+    white-space: nowrap; /* Prevents text from wrapping onto multiple lines */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.card-body h3 {
+    color: white;
+    margin-bottom: 0;
+    /* Adjust the margin as needed to reduce space */
+    margin-top: 5px;
+}
+
+.card-body h5 {
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+
+
+.tour-details {
+    display: flex;
+    align-items: center;
+}
+
+.tour-details h4 {
+    margin-bottom: 0;
+    left: 86px;
+    bottom: 92px;
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 140%;
+
+}
+
+
+.tour-details h5 {
+    position: relative;
+    color: white;
+    /* Remove top margin */
+    margin: 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 100%;
+
+    padding: 0;
+}
+
+.card-image {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border-bottom: 5px solid #3e0ebb;
+    border: 5px solid #5314ef;
+}
+
+.view-details-button {
+    width: 100%;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: #5314EF;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for both background and text color changes */
+}
+
+.view-details-button:hover {
+    background-color: #0A0016;
+    /* New background color on hover */
+    color: #fff;
+    /* New text color on hover */
+}
+
+.card-body p {
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.svg-city {
+    left: 10px;
+    position: absolute;
+}
+
+
+.svgi {
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    top: 18px;
+}
+
+.svgi svg path {
+    transition: fill 0.3s ease, stroke 0.3s ease;
+}
+
+.svgi svg {
+    cursor: pointer;
+}
+
+
+
+.cityCountry {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.cityCountry h1 {
+    display: flex;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 8px;
+    font-size: 14px;
+    line-height: 100%;
+    background-color: #5214EF;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 32px;
+    padding-right: 14px;
+    border-radius: 5px;
+}
+
+.error-message {
+    color: red;
+    /* Set the text color to red */
+    font-size: 1.2em;
+    /* Increase the font size */
+    text-align: center;
+    /* Center the text */
+    margin-top: 20px;
+    /* Add some space at the top */
+    font-weight: bold;
+    /* Make the text bold */
+}
+
+.date-name {
+    display: flex;
+    /* This will layout the children (svg and h5) in a row */
+    align-items: center;
+    /* This will vertically center align the children in the container */
+    gap: 8px;
+    /* This adds space between the SVG and the text */
+    justify-content: start;
+    /* Horizontally center aligns the children in the container */
+    margin-top: 0;
+    margin: 0;
+}
+
+.date-name h5 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 100%;
+
+}
+
+.date-name svg {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}

@@ -1,0 +1,193 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure the html and body take up full height of the viewport */
+    /* Removed overflow: hidden; */
+}
+
+/* Styling for the main split layout */
+.Profile__Split {
+    display: flex;
+    height: 100vh; /* Ensures that the flex container exactly matches the height of the viewport */
+    margin: 0;
+    /* Removed overflow: auto; -- Let individual children manage their own overflow */
+}
+
+/* Styling for the left side container holding the image */
+.Profile__foto-majtas {
+    flex: 1;
+    margin: 0;
+    overflow: hidden; /* Specific to this container if needed */
+}
+
+.Profile__foto-majtas img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Styling for the right side container holding the form */
+.Profile__form-djathtas {
+    flex: 1;
+    background-color: #FFFFFF;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: auto; /* Ensure this container can scroll if content overflows */
+}
+
+/* Specific form styling */
+.Profile__edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 600px; /* Maximum width */
+    width: 100%; /* Adjusts width to be responsive within its parent */
+    padding: 30px;
+    margin: 0 auto; /* Centers the form in the available space */
+    border-radius: 5px;
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+    overflow: hidden; /* Hides any overflow */
+    border: none;
+}
+
+/* Labels and inputs have no margins and are displayed properly */
+.Profile__edit-form label,
+.Profile__edit-form input {
+    margin: 0;
+    /* Remove margin */
+}
+
+.Profile__edit-form label {
+    margin-left: 8px;
+
+}
+
+.Profile__edit-form label {
+    display: block;
+    /* Ensure labels are on their own line */
+    color: #252B32;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding-top: 12px;
+}
+
+.Profile__edit-form input {
+    padding-top: 22px;
+    padding-bottom: 22px;
+    border: 1px solid #252B32;
+    color: #252B32;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    width: 100%;
+    /* Full width to fit container */
+}
+
+.Profile__edit-form input[type="text"]:focus,
+.Profile__edit-form input[type="email"]:focus,
+.Profile__edit-form input[type="date"]:focus {
+    border-color: #252B32;
+    color: #252B32;
+    outline: none;
+    box-shadow: none;
+}
+
+/* Button styling for actions */
+.Profile__edit-form button {
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px 0;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}
+
+.Profile__edit-form button:hover {
+    background-color: #0056b3;
+}
+
+.first__last-name {
+    display: flex;
+    flex-direction: row;
+    gap: 56px;
+    margin-bottom: 0;
+}
+
+.first__last-name label {
+
+    display: block;
+    /* Ensure labels are on their own line */
+    color: #252B32;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding-top: 12px;
+    margin-bottom: 8px;
+}
+
+.first__name-lbel,
+.last__name-lbel {
+    flex-direction: column;
+}
+
+.first__name-lbel,
+.last__name-lbel {
+    flex: 1;
+
+}
+
+.gender-selection,
+.role-selection {
+    display: flex;
+    gap: 12px;
+}
+
+
+
+.gender__admin-box {
+    display: flex;
+}
+
+.gender__admin-box label {
+    margin-bottom: 8px;
+}
+
+.gender__label-column,
+.role__label-column {
+    flex: 1;
+    
+}
+
+.gender-option,
+.role-option {
+    padding: 22px 26px;
+    border: 1px solid #D9D9D9;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #D9D9D9;
+    margin-bottom: 0
+}
+
+.gender-option.selected,
+.role-option.selected {
+    color: #252B32;
+    /* Text color when selected */
+    border-color: #252B32;
+    /* Border color when selected */
+}
